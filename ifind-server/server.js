@@ -22,13 +22,8 @@ app.use((req, res, next) => {
     'GET, POST, PUT, DELETE, OPTIONS'
   );
   res.setHeader(
-    'Access-Control-Allow-Headers',
-    'Content-Type, Accept, X-Custom-Header, Authorization'
-  );
-  if (req.method === 'OPTIONS') {
-    return res.status(200).end();
-  }
-  next();
+    'Access-Control-Allow-Headers'
+    );
 });
 
 app.use('/auth', authRoutes);

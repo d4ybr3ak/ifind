@@ -13,6 +13,8 @@ import { FindtubeComponent } from './findtube/findtube.component';
 import { NavComponent } from './nav/nav.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
+import { LoginComponent } from './login/login.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 
 const myRoutes: Routes = [
@@ -23,7 +25,8 @@ const myRoutes: Routes = [
   {path: 'findtube', component: FindtubeComponent},
   {path: 'productcomparison', component: ProductComparisonComponent},
   {path: 'blog', component: BlogComponent},
-  {path: 'contact', component: ContactComponent}
+  {path: 'contact', component: ContactComponent},
+  {path: 'login', component: LoginComponent}
 ];
 
 @NgModule({
@@ -37,7 +40,9 @@ const myRoutes: Routes = [
     FindtubeComponent,
     NavComponent,
     ContactComponent,
-    BlogComponent
+    BlogComponent,
+    LoginComponent,
+    AddProductComponent
   ],
   imports: [
     RouterModule.forRoot(myRoutes),

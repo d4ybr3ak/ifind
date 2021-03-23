@@ -18,6 +18,9 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { NewsLetterComponent } from './news-letter/news-letter.component';
 import { FooterComponent } from './footer/footer.component';
+import { NewUserComponent } from './new-user/new-user.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 const myRoutes: Routes = [
@@ -33,6 +36,7 @@ const myRoutes: Routes = [
   {path: 'add-product', component: AddProductComponent},
   {path: 'admin-dashboard', component: AdminDashboardComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'product-list', component: ProductListComponent},
 ];
 
 @NgModule({
@@ -51,7 +55,10 @@ const myRoutes: Routes = [
     AddProductComponent,
     AdminDashboardComponent,
     NewsLetterComponent,
-    FooterComponent
+    FooterComponent,
+    NewUserComponent,
+    ProductListComponent,
+    UserListComponent
   ],
   imports: [
     RouterModule.forRoot(myRoutes),

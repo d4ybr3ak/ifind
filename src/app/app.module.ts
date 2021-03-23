@@ -15,6 +15,9 @@ import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { LoginComponent } from './login/login.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { NewsLetterComponent } from './news-letter/news-letter.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 const myRoutes: Routes = [
@@ -26,7 +29,10 @@ const myRoutes: Routes = [
   {path: 'productcomparison', component: ProductComparisonComponent},
   {path: 'blog', component: BlogComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'add-product', component: AddProductComponent},
+  {path: 'admin-dashboard', component: AdminDashboardComponent},
+  {path: 'login', component: LoginComponent},
 ];
 
 @NgModule({
@@ -42,7 +48,10 @@ const myRoutes: Routes = [
     ContactComponent,
     BlogComponent,
     LoginComponent,
-    AddProductComponent
+    AddProductComponent,
+    AdminDashboardComponent,
+    NewsLetterComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forRoot(myRoutes),

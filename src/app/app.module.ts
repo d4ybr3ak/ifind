@@ -21,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { ServicesComponent } from './services/services.component';
 
 
 const myRoutes: Routes = [
@@ -58,7 +59,8 @@ const myRoutes: Routes = [
     FooterComponent,
     NewUserComponent,
     ProductListComponent,
-    UserListComponent
+    UserListComponent,
+    ServicesComponent
   ],
   imports: [
     RouterModule.forRoot(myRoutes),

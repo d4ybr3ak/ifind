@@ -1,29 +1,36 @@
-<div class="row">
-    <div class="col-md-4">
-        
-    </div>
-    <div class="col-md-4">
-        <div class="card login-card">
-            <div class="card-body">
-                <h3 class="text-center font-weight-light mb-4">Add Product</h3>
-                <form action="/">
-                    <div class="form-group">
-                        <input type="text" placeholder="Product Name" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Product Category" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Product Price" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Product Link" class="form-control">
-                    </div>
-                    <input type="submit" value="Add Product" class="btn btn-danger btn-block mb-3">
-                </form>
-                
-            </div>
+<div style="width: 400px; margin: auto;">
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            required
+            [(ngModel)]="product.title"
+            name="title"
+          />
         </div>
+  
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input
+            class="form-control"
+            id="description"
+            required
+            [(ngModel)]="products.description"
+            name="description"
+          />
+        </div>
+  
+        <button (click)="saveProducts()" class="btn btn-success">Submit</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h4>You submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newProducts()">Add</button>
+      </div>
     </div>
-    <div class="col-md-4"></div>
-    </div>
+  </div>
+  

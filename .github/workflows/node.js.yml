@@ -14,10 +14,9 @@ jobs:
 
    runs-on: ubuntu-latest
 
-<<<<<<< HEAD
+
  # this will check connection and run a command to transfer the commited files
-=======
->>>>>>> parent of eac24fb (cleaned route and website)
+
    steps:
     - uses: actions/checkout@v2
 
@@ -39,14 +38,9 @@ jobs:
         USERNAME: ${{ secrets.SSH_USERNAME }}
         PORT: ${{ secrets.SSH_PORT }}
         KEY: ${{ secrets.SSH_KEY }}
-<<<<<<< HEAD
-        
       
         
      # Thiss will install dependencies, build dependencies, and run automatic testing
-    
- 
-      
-=======
+  
         script: ls
->>>>>>> parent of eac24fb (cleaned route and website)
+

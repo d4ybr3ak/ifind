@@ -23,8 +23,11 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { ServicesComponent } from './services/services.component';
+<<<<<<< HEAD
 =======
 >>>>>>> parent of eac24fb (cleaned route and website)
+=======
+>>>>>>> fa8f3a03c27283757393070dce4fb08dc1e4a532
 
 
 const myRoutes: Routes = [
@@ -65,9 +68,12 @@ const myRoutes: Routes = [
     ProductListComponent,
     UserListComponent,
     ServicesComponent
+<<<<<<< HEAD
 =======
     FindtubeComponent
 >>>>>>> parent of eac24fb (cleaned route and website)
+=======
+>>>>>>> fa8f3a03c27283757393070dce4fb08dc1e4a532
   ],
   imports: [
     RouterModule.forRoot(myRoutes),
